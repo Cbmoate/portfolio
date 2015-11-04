@@ -1,0 +1,40 @@
+body {
+	font-family: 'Sumana', serif;
+}
+
+body {
+	background-color: #666666;
+	color: white;
+	text-shadow: 1px 1px #000000;
+
+}
+
+h1, h2 {
+	text-align: center;
+	line-height: 100%;
+}
+
+p {
+	line-height: 100%;
+	
+}
+
+img {
+	width: 675px;
+	height: 850px;
+}
+
+ul {
+	line-height: 150%;
+    
+}
+
+a {
+	text-shadow: 0px 0px;
+}
+
+footer {
+	line-height: 145%;
+}
+
+br
