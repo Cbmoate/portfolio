@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio for CB Moate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cbmoate/portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Developer",
+    "CB",
+    "Moate"
+  ],
+  "author": "CB Moate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cbmoate/portfolio/issues"
+  },
+  "homepage": "https://github.com/Cbmoate/portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
