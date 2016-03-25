@@ -1,15 +1,19 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "MEAN portfolio",
-  "main": "server.js",
+  "description": "portfolio for CB Moate",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cbmoate/portfolio.git"
+  },
   "keywords": [
     "Portfolio",
-    "RCB",
+    "Developer",
     "CB",
     "Moate"
   ],
@@ -18,5 +22,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "morgan": "^1.7.0"
-  }
+},
+  "bugs": {
+    "url": "https://github.com/Cbmoate/portfolio/issues"
+  },
+  "homepage": "https://github.com/Cbmoate/portfolio#readme",
 }
