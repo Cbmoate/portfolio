@@ -1,10 +1,10 @@
 $(document).ready(function() { 
-    
   var computerChoices = ["Rock", "Paper", "Scissors"];
   var player;
   var rounds = 2;
   var wins = 0;
   var loses = 0;
+  
   $('#rounds').html(rounds-1);
   $('#yourScore').html(wins);
   $('#computerScore').html(loses);
