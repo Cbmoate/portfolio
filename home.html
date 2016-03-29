@@ -11,61 +11,73 @@
 	  <script src="/node_modules/angular/angular.js"></script>
           
 	</head>
-	<body>
+  <main>
+  	<body>
 
-		<!--nav-->
-		<nav>
-	    <div class="nav-wrapper black">
-	      <img id="logo" src="miniLogo.jpg">
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="#">Contact</a></li>
-	        <li><a href="#">Portfolio</a></li>
-	        <li><a href="#">About</a></li>
-	      </ul>
-	    </div>
-	  </nav>
-
-    <!--main-->
-    <div class="container">
-      <div class="row">
-        <div id="dudeDiv" class="col s6">
-          <img class="responsive-img" id="dude"src="chris.jpg">
-        </div>
-        <div class="col m6 hide-on-small-only">
-          <h5 class="red-text">A devloper slightly off-center...</h5>
-        </div>
+  		<!--nav-->
+      <div class="navbar-fixed">
+    		<nav>
+    	    <div class="nav-wrapper black">
+    	      <a href="#"><img id="logo" src="miniLogo.jpg"></a>
+            <ul id=" nav-mobile" class="side-nav" style="left: -250px;">
+              <li>
+                <a href="#">Link1</a>
+              </li>
+            </ul>
+            <a href="#" data-activates='nav-mobile' class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+    	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+    	        <li><a href="#">Contact</a></li>
+    	        <li><a href="#">Portfolio</a></li>
+    	        <li><a href="#">About</a></li>
+    	      </ul>
+    	    </div>
+    	  </nav>
       </div>
-      <div class="row">
-        <div col s4>
-          <p>I'm CB Moate.  I'm a Front-End Developer who loves Javascript.</p>
-        </div>
-      </div>
-    </div>
 
-	  <!--footer-->
-	  <footer class="page-footer black">
+      <!--main-->
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <div id="dudeDiv" class="col s6">
+            <img class="responsive-img hide-on-small-only" id="dude"src="chris.jpg">
           </div>
-        <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Social Profiles</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/Cbmoate">Github</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cbmoate">LinkedIn</a></li>
-          </ul>
+          <div class="col m6 hide-on-small-only">
+            <h5 class="red-text">A devloper slightly off-center...</h5>
+          </div>
         </div>
+        
+          <div class="caption right-align">
+            <h5>I'm CB Moate.  I'm a Front-End Developer who loves Javascript.</h5>
+          </div>
+        
       </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">&copy; 2016 CB Moate
-        </div>
-      </div>
-    </footer>
 
-    <!--styles and scripts-->    
-	  <link rel="stylesheet" type="text/css" href="public/css/portStyle.css">
-	</body>
+  	  <!--footer-->
+  	  <footer class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+          <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Profiles</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/Cbmoate">Github</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cbmoate">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">&copy; 2016 CB Moate
+          </div>
+        </div>
+      </footer>
+
+      <!--styles and scripts-->    
+  	  <link rel="stylesheet" type="text/css" href="public/css/portStyle.css">
+  	</body>
+  </main>
 </html>
