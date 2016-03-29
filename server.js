@@ -3,18 +3,14 @@ var express = require ('express');
 var app = express();
 var PORT = process.env.PORT || 9001;
 
+var logger = require('morgan');
 
-//feeding JS and CSS directories
-app.use('/js', express.static("public/js"));
-app.use('/css', express.static("public/css"));
-app.use('/images', express.static("/public/images"));
-
-//feeding in HTML views
-app.get('/', function(req, res){
-  res.render("home");
+app.use(express.static(__dirname+"/public"));
+app.use(logger('dev'));
+app.get('*', function(req,res){
+  res.sendFile(process.cwd() + "/public/index.html");
 });
 
-//listener
 app.listen(PORT, function(){
   console.log("Goliath Online on port %s", PORT);
 });
