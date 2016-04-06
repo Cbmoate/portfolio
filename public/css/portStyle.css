@@ -14,14 +14,10 @@
   }
 
 
-  #dudeDiv{
-  
-    padding-top: 10px;
-    margin-bottom: -67px;
-  
-  }
 
   #dude{
-    margin-bottom: -px; 
+    
+    max-width: 50%;
+    max-height: 50%;
   }
 
