@@ -1,7 +1,10 @@
+
   body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
+
   }
 
   #main {
@@ -13,9 +16,7 @@
   	height: 50px; 
   }
 
-
-  #dude{
-    max-width: 50%;
-    max-height: 50%;
+  #pitch, .page-footer, .navbar-fixed {
+    font-family: 'Acme', sans-serif;
   }
 

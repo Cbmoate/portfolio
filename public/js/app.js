@@ -1,22 +1,13 @@
-angular.module('exercise1'), ['ngRoute']
-  .config(['$routeProvider', '$locationProvider'], function($routeProvider, $locationProvider
-    $routeProvider
-    .when('/first', {
-      templateUrl: 'first.html'
-    })
-    .when('/second', {
-      templateUrl: 'second.html'
-    })
-    .when('/third',{
-      templateUrl: 'third.html'
-    })
-    .when('/fourth',{
-      templateUrl: 'fourth.html'
-    })
-    .when('/fifth', {
-      templateUrl: 'fifth.html'
-    });
-
-    $locationProvider.html5Mode(true);
-  )])
-  
+angular.module('portfolio'), ['ui.router', 'ui.router.stateHelper']
+  .config(function(stateHelperProvider){
+    stateHelperProvider
+    .state({
+      name: 'home', 
+      templateURL: 'home.html',
+      children: [
+      {
+        name: ''
+      }
+      ]
+    }) 
+    }
