@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/Cbmoate/portfolio.git"
   },
+  "engines":{
+    "node": "4.2.1"
+  }
   "keywords": [
     "Portfolio",
     "Developer",
