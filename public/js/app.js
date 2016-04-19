@@ -31,4 +31,8 @@ angular.module('portfolio', ['ui.router'])
     //     }
     //   }
     // })
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    })
   });

@@ -6,7 +6,7 @@ var PORT = process.env.PORT || 3001;
 app.use(express.static(__dirname+"/public"));
 
 app.get('/', function(req,res){
-  res.sendFile(process.cwd() + "/home.html");
+  res.sendFile(process.cwd() + "/index.html");
 });
 
 app.listen(PORT, function(){
