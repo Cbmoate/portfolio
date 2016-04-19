@@ -1,14 +1,12 @@
 //Express
 var express = require ('express');
 var app = express();
-var PORT = process.env.PORT || 9001;
-
-var logger = require('morgan');
+var PORT = process.env.PORT || 3001;
 
 app.use(express.static(__dirname+"/public"));
-app.use(logger('dev'));
-app.get('*', function(req,res){
-  res.sendFile(process.cwd() + "/public/index.html");
+
+app.get('/', function(req,res){
+  res.sendFile(process.cwd() + "/home.html");
 });
 
 app.listen(PORT, function(){

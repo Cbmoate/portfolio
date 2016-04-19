@@ -1,16 +1,17 @@
 angular
   .module('portfolio', [
-    'ui.router', 'ui.router.stateHelper'
+    'ui.router'
     ])
-    .config(function(stateHelperProvider){
-      stateHelperProvider
-      .state({
-        name: 'home', 
+    .config(['$urlRouterProvider', "$stateProvider"], function($urlRouterProvider, $stateProvider){
+      $urlRouterProvider.otherwise('/');
+
+      $stateProvider
+      .state('home', {
+        url: '/',
         templateURL: 'home.html',
         children: [
         {
           name: ''
-        }
-        ]
+        }]
       }) 
-    }
+    });

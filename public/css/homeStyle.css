@@ -16,7 +16,7 @@
   	height: 50px; 
   }
 
-  #pitch, .page-footer, .navbar-fixed {
+  .pitch, .page-footer, .navbar-fixed {
     font-family: 'Acme', sans-serif;
   }
 
