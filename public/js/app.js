@@ -9,7 +9,7 @@ angular.module('portfolio', ['ui.router'])
           templateURL: 'views/main.html'
         },
         'nav@main': {
-          templateURL: '/views/assets/nav.html'
+          templateURL: '/views/assets/navBar.html'
         }.
         'body@main': {
           templateURL: '/views/partials/landing-partial.html'
