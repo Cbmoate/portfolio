@@ -1,17 +1,34 @@
-angular
-  .module('portfolio', [
-    'ui.router'
-    ])
-    .config(['$urlRouterProvider', "$stateProvider"], function($urlRouterProvider, $stateProvider){
-      $urlRouterProvider.otherwise('/');
+angular.module('portfolio', ['ui.router'])
+  .config(function($urlRouterProvider, $stateProvider, $locationProvider){
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+    .state('main', {
+      url: '/',
+      views: {
+        '': {
+          templateURL: 'views/main.html'
+        },
+        'nav@main': {
+          templateURL: '/views/assets/nav.html'
+        }.
+        'body@main': {
+          templateURL: '/views/partials/landing-partial.html'
+        }
+      }
+    }) 
 
-      $stateProvider
-      .state('home', {
-        url: '/',
-        templateURL: 'home.html',
-        children: [
-        {
-          name: ''
-        }]
-      }) 
-    });
+    // .state('games', {
+    //   url: '/games',
+    //   views: {
+    //     '': {
+    //       templateURL: 'views/main.html'
+    //     },
+    //     'nav@main': {
+    //       templateURL: '/views/assets/nav.html'
+    //     }.
+    //     'body@main': {
+    //       templateURL: '/views/partials/games.html'
+    //     }
+    //   }
+    // })
+  });
