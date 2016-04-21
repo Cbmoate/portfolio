@@ -4,121 +4,118 @@
     <title>CB Moate Front-End Dev</title>
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="/js/init.js"></script>
+ 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="/js/init.js"></script>
     <!--materialize icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--styles and scripts-->    
+    <link rel="stylesheet" type="text/css" href="/css/homeStyle.css">
     <!--font-->
     <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
     <!--icon-->
      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"> 
-
   </head>
-  <main ng-app = "portfolio">
     <body>
-      <!--nav-->
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper black">
-            <a href="#" class="brand-logo"><img id="logo" src="images/miniLogo.jpg"></a>
-            <a href="#" data-activates="mobile-demo" class="right-align button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Live Projects</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Live Projects</a></li>
-            </ul>
-          </div>
-        </nav>
+    <!--nav-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#" class="brand-logo"><img id="logo" src="images/miniLogo.jpg"></a>
+          <a href="#" data-activates="mobile-demo" class="right-align button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Live Projects</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Live Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br/>
+    <!--main-->
+    <div class="container">
+      <div class="row">
+        <div class="card">
+        <div id="dudeDiv" class="col m7">
+          <img class="responsive-img hide-on-small-only" id="dude"src="/images/chris.jpg">
+        </div>
+        <div class="col m5 s12 right-align">
+          <h3 class="red-text pitch">A developer slightly off-center.</h3>
+        </div>
+        <div class="row">
+        
+        </div>
       </div>
-      <br/>
-      <!--main-->
+      </div>
+      
+      <div class="row">
+        <div class="card-content right-align pitch">
+          <h2>I'm CB Moate.  I'm a Front-End Developer who loves <span class="red-text">Javascript</span></h2>
+        </div>
+      </div>
+    </div>
+    <!--About me blah blah blah-->
+    <div class="row">
+      <div class="card-panel col s8 offset-s4">
+        <h5>I'm a front-end developer raised on the MEAN-stacks of Central New Jersey.  I've spent the last 10 years working as a chef and use that same high-energy, results-driven mentality in the coding world.  Because of this I hope to bring a very unique view to the developer's role.
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-panel col s8 red-text">
+        <h5>I spend way too much time enjoying everything I do.  I'm very competitive (usually with myself), and feel like anything can be made into a game.  Once it's a game, the mission is to get better at it until you're the very best like no one ever was.
+        </h5>
+      </div>
+    </div>
+     <div class="row">
+      <div class="card-panel col s8 offset-s4">
+        <h5>The hospitality industry, as the name implies, is about being customer driven.  I try to put the goals of the project first and make sure that everyone has their needs met.  I do service.  I do it with a smile.
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-panel col s8 red-text">
+        <h5>I'm pretty sure my mind melted just a little bit when I learned Angular and I've never quite recovered.
+      </div>
+    </div>
+
+    
+
+    <!--footer-->
+    <footer class="page-footer black">
       <div class="container">
         <div class="row">
-          <div class="card">
-          <div id="dudeDiv" class="col m7">
-            <img class="responsive-img hide-on-small-only" id="dude"src="/images/chris.jpg">
-          </div>
-          <div class="col m5 s12 right-align">
-            <h3 class="red-text pitch">A developer slightly off-center.</h3>
-          </div>
-          <div class="row">
-          
-          </div>
-        </div>
-        </div>
-        
-        <div class="row">
-          <div class="card-content right-align pitch">
-            <h2>I'm CB Moate.  I'm a Front-End Developer who loves <span class="red-text">Javascript</span></h2>
-          </div>
-        </div>
-      </div>
-
-        <!--About me blah blah blah-->
-        <div class="row">
-          <div class="card-panel col s8 offset-s4">
-            <h5>I'm a front-end developer raised on the MEAN-stacks of Central New Jersey.  I've spent the last 10 years working as a chef and use that same high-energy, results-driven mentality in the coding world.  Because of this I hope to bring a very unique view to the developer's role.
-            </h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card-panel col s8 red-text">
-            <h5>I spend way too much time enjoying everything I do.  I'm very competitive (usually with myself), and feel like anything can be made into a game.  Once it's a game, the mission is to get better at it until you're the very best like no one ever was.
-            </h5>
-          </div>
-        </div>
-         <div class="row">
-          <div class="card-panel col s8 offset-s4">
-            <h5>The hospitality industry, as the name implies, is about being customer driven.  I try to put the goals of the project first and make sure that everyone has their needs met.  I do service.  I do it with a smile.
-            </h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card-panel col s8 red-text">
-            <h5>I'm pretty sure my mind melted just a little bit when I learned Angular and I've never quite recovered.
-          </div>
-        </div>
-  
-      
-
-      <!--footer-->
-      <footer class="page-footer black">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Call Back</h5>
-              <p class="grey-text text-lighten-4"></p>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="mailto:Cbmoate@gmail.com" target="_blank">Gmail</a></li>
-              </ul>
-            </div>
-          <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Social Profiles</h5>
+          <div class="col l6 s12">
+            <h5 class="white-text">Call Back</h5>
+            <p class="grey-text text-lighten-4"></p>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/Cbmoate" target="_blank">Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cbmoate" target="_blank">LinkedIn</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://twitter.com/CBmoate" target="_blank">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="mailto:Cbmoate@gmail.com" target="_blank">Gmail</a></li>
             </ul>
           </div>
+        <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Social Profiles</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/Cbmoate" target="_blank">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cbmoate" target="_blank">LinkedIn</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/CBmoate" target="_blank">Twitter</a></li>
+          </ul>
         </div>
+      </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">&copy; 2016 CB Moate
         </div>
-        <div class="footer-copyright">
-          <div class="container">&copy; 2016 CB Moate
-          </div>
-        </div>
-      </footer>
-      <!--styles and scripts-->    
-      <link rel="stylesheet" type="text/css" href="/css/homeStyle.css">
-    </body>
-  </main>
+      </div>
+    </footer>
+  </body>
 </html>

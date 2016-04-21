@@ -1,12 +1,12 @@
 //Express
 var express = require ('express');
 var app = express();
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 9119;
 
 app.use(express.static(__dirname+"/public"));
 
 app.get('/', function(req,res){
-  res.sendFile(process.cwd() + "/home.html");
+  res.sendFile(process.cwd() + "/index.html");
 });
 
 app.listen(PORT, function(){

@@ -2,25 +2,25 @@
 <html>
   <head>
     <title>CB Moate Front-End Dev</title>
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <!--Angular-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js"></script>
-    <script src="public/js/init.js"></script>
-    <!--Materialize-->
+    
+    
+
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <!--Materialize JS-->
+    <!--Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <!--materialize icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Custom CSS-->    
+     <!--styles and scripts-->    
     <link rel="stylesheet" type="text/css" href="/css/homeStyle.css">
-    <!---Icon-->
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+    <!--icon-->
      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">          
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"> 
   </head>
-  <body ng-app = "portfolio">
+  <body ng-app="portfolioApp">
     <div ui-view></div>
       
       <!--footer-->
@@ -48,6 +48,13 @@
         <div class="container">&copy; 2016 CB Moate
         </div>
       </div>
-    </footer>  
+    </footer>
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="/js/init.js"></script> 
   </body>
 </html>
