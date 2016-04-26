@@ -11,7 +11,7 @@ angular.module('portfolioApp', [
             templateUrl: '/views/main.html'
           },
           'nav@main': {
-            templateUrl: '/views/assets/navBar.html'
+            templateUrl: '/views/assets/constructionNav.html'
           },
           'body@main': {
             templateUrl: '/views/partials/landing-partial.html'
@@ -26,7 +26,7 @@ angular.module('portfolioApp', [
             templateUrl: '/views/main.html'
           },
           'nav@projects': {
-            templateUrl: '/views/assets/navBar.html',
+            templateUrl: '/views/assets/constructionNav.html',
             
           },
           'body@projects':{
@@ -35,21 +35,21 @@ angular.module('portfolioApp', [
         }
       })
 
-      //    .state('working', {
-      //   url: '/working',
-      //   views: {
-      //     '': {
-      //       templateUrl: 'views/main.html'
-      //     },
-      //     'nav@working': {
-      //       templateUrl: '/views/assets/nav.html',
+         .state('working', {
+        url: '/working',
+        views: {
+          '': {
+            templateUrl: 'views/main.html'
+          },
+          'nav@working': {
+            templateUrl: '/views/assets/constructionNav.html',
             
-      //     },
-      //     'body@working':{
-      //       templateUrl: '/views/partials/working-partial.html',
-      //     }
-      //   }
-      // })
+          },
+          'body@working':{
+            templateUrl: '/views/partials/working-partial.html',
+          }
+        }
+      })
 
 
 
