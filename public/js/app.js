@@ -1,5 +1,5 @@
 angular.module('portfolioApp', [
-  'ui.router'
+  'ui.router', 
   ])
   .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
@@ -11,29 +11,29 @@ angular.module('portfolioApp', [
             templateUrl: '/views/main.html'
           },
           'nav@main': {
-            templateUrl: '/views/assets/constructionNav.html'
+            templateUrl: '/views/assets/navBar.html'
           },
           'body@main': {
             templateUrl: '/views/partials/landing-partial.html'
           }
         }
-      }),
+      })
 
-      // .state('project', {
-      //   url: '/project',
-      //   views: {
-      //     '': {
-      //       templateUrl: 'views/main.html'
-      //     },
-      //     'nav@project': {
-      //       templateUrl: '/views/assets/nav.html',
+      .state('projects', {
+        url: '/projects',
+        views: {
+          '': {
+            templateUrl: '/views/main.html'
+          },
+          'nav@projects': {
+            templateUrl: '/views/assets/navBar.html',
             
-      //     },
-      //     'body@project':{
-      //       templateUrl: '/views/partials/project-partial.html',
-      //     }
-      //   }
-      // }),
+          },
+          'body@projects':{
+            templateUrl: '/views/partials/project-partial.html',
+          }
+        }
+      })
 
       //    .state('working', {
       //   url: '/working',
@@ -49,7 +49,7 @@ angular.module('portfolioApp', [
       //       templateUrl: '/views/partials/working-partial.html',
       //     }
       //   }
-      // }),
+      // })
 
 
 
