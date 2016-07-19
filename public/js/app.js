@@ -35,7 +35,7 @@ angular.module('portfolioApp', [
         }
       })
 
-         .state('working', {
+      .state('working', {
         url: '/working',
         views: {
           '': {
@@ -50,8 +50,6 @@ angular.module('portfolioApp', [
           }
         }
       })
-
-
 
     $locationProvider.html5Mode({
       enabled: true,
